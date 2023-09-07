@@ -1,339 +1,207 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: YouTube梦歌|限速节点_48, server: fs.xianyuwangluo.cyou, port: 27206, type: ss, cipher: chacha20-ietf-poly1305, password: 14482108-8b77-44dd-99d5-b12be8a32eae, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_44, server: dx.ktmwan.top, port: 27252, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_9, server: dx.ktmwan.top, port: 27252, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_82, server: yd.qianggewangluo.buzz, port: 10814, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_65, server: dx.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_68, server: dx.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_39, server: yd.ktmwan.top, port: 27251, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_95, server: cf-test.q5wrff7jtkdg23.top, port: 2082, type: vmess, uuid: 444602db-698c-49bd-b3b1-b171fb0543b9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tyo-v38.q5wrff7jtkdg23.top}, udp: true}
-  - {name: YouTube梦歌|限速节点_9, server: 103.160.204.72, port: 80, type: vmess, uuid: 21d60b8c-cd9d-4cbc-9a68-b29ce7d28ed8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: 18.wyhkaa0.gq}, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_38, server: dx.ktmwan.top, port: 27250, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_27, server: dx.ktmwan.top, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_30, server: dx.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|京港直连_8, server: js.bfyun.eu.org, port: 2082, type: vmess, uuid: fb2987e2-3170-41ad-80f6-b733cd94e98b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hostodo, ws-headers: {Host: hostodo.galenet.online}, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_87, server: yd.qianggewangluo.buzz, port: 10818, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_62, server: dx.ktmwan.top, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_51, server: yd.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_94, server: cdn.anycast.eu.org, port: 80, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: semi-resolutions-clearing-sr.trycloudflare.com}, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_109, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 87a95522-985c-4a17-afea-9b7d7208bce5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: 3.freek1.xyz}, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_6, server: dx.ktmwan.top, port: 27251, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_76, server: yd.qianggewangluo.buzz, port: 10808, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_83, server: yd.qianggewangluo.buzz, port: 10815, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_56, server: dx.ktmwan.top, port: 27256, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_53, server: dx.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_50, server: dx.ktmwan.top, port: 27254, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_13, server: yd.ktmwan.top, port: 27254, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_3, server: dx.ktmwan.top, port: 27250, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_79, server: yd.qianggewangluo.buzz, port: 10811, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_31, server: yd.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_18, server: dx.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_78, server: yd.qianggewangluo.buzz, port: 10810, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_15, server: dx.ktmwan.top, port: 27254, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|限速节点_6, server: fs.xianyuwangluo.cyou, port: 27210, type: ss, cipher: chacha20-ietf-poly1305, password: 156419d9-fcee-4ad4-90b4-ca067d7a3ed9, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_46, server: lt.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
   - {name: YouTube梦歌|广港隧道|Netflix_21, server: dx.ktmwan.top, port: 27256, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_41, server: dx.ktmwan.top, port: 27251, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_10, server: yd.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|京港直连_25, server: 23.227.39.109, port: 443, type: vmess, uuid: 87a95522-985c-4a17-afea-9b7d7208bce5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: 3.freek1.xyz}, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_44, server: dx.ktmwan.top, port: 27252, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_69, server: yd.qianggewangluo.buzz, port: 10801, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_19, server: yd.ktmwan.top, port: 27256, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_53, server: dx.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_12, server: dx.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_15, server: dx.ktmwan.top, port: 27254, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_39, server: yd.ktmwan.top, port: 27251, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_6, server: dx.ktmwan.top, port: 27251, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_75, server: yd.qianggewangluo.buzz, port: 10807, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_66, server: yd.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_56, server: dx.ktmwan.top, port: 27256, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_72, server: yd.qianggewangluo.buzz, port: 10804, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_13, server: yd.ktmwan.top, port: 27254, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_51, server: yd.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_70, server: yd.qianggewangluo.buzz, port: 10802, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
   - {name: YouTube梦歌|广港隧道|Netflix_1, server: yd.ktmwan.top, port: 27250, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_27, server: dx.ktmwan.top, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_78, server: yd.qianggewangluo.buzz, port: 10810, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_62, server: dx.ktmwan.top, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_30, server: dx.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_82, server: yd.qianggewangluo.buzz, port: 10814, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_79, server: yd.qianggewangluo.buzz, port: 10811, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_50, server: dx.ktmwan.top, port: 27254, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_87, server: yd.qianggewangluo.buzz, port: 10818, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_31, server: yd.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_7, server: yd.ktmwan.top, port: 27252, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_153, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 553128fc-df6d-4ff0-b608-67e4c625abcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm4.shabijichang.com}, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_67, server: lt.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_65, server: dx.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_28, server: yd.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_10, server: yd.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_80, server: yd.qianggewangluo.buzz, port: 10812, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_68, server: dx.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
   - {name: YouTube梦歌|广港隧道|NETFLIX_74, server: yd.qianggewangluo.buzz, port: 10806, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_47, server: dx.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_24, server: dx.ktmwan.top, port: 27257, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
   - {name: YouTube梦歌|广港隧道|NETFLIX_42, server: yd.ktmwan.top, port: 27252, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
   - {name: YouTube梦歌|广港隧道|NETFLIX_48, server: yd.ktmwan.top, port: 27254, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_153, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 553128fc-df6d-4ff0-b608-67e4c625abcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm4.shabijichang.com}, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_70, server: yd.qianggewangluo.buzz, port: 10802, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_63, server: yd.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_75, server: yd.qianggewangluo.buzz, port: 10807, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_12, server: dx.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_24, server: dx.ktmwan.top, port: 27257, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|京港直连_65, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 392053a2-c18f-4914-890c-fd326ee27b4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg2.shabijichang.com}, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_54, server: yd.ktmwan.top, port: 27256, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_19, server: yd.ktmwan.top, port: 27256, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_59, server: dx.ktmwan.top, port: 27257, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_28, server: yd.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|京港直连_86, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 553128fc-df6d-4ff0-b608-67e4c625abcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm3.shabijichang.com}, udp: true}
-  - {name: YouTube梦歌|京港直连_23, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 392053a2-c18f-4914-890c-fd326ee27b4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm.shabijichang.com}, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_80, server: yd.qianggewangluo.buzz, port: 10812, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_16, server: yd.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_7, server: yd.ktmwan.top, port: 27252, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_77, server: yd.qianggewangluo.buzz, port: 10809, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|京港直连_89, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 392053a2-c18f-4914-890c-fd326ee27b4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xn2.shabijichang.com}, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_72, server: yd.qianggewangluo.buzz, port: 10804, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_69, server: yd.qianggewangluo.buzz, port: 10801, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_29, server: lt.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_17, server: lt.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_57, server: yd.ktmwan.top, port: 27257, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_40, server: lt.ktmwan.top, port: 27251, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_22, server: yd.ktmwan.top, port: 27257, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_26, server: lt.ktmwan.top, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|京港直连_73, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 392053a2-c18f-4914-890c-fd326ee27b4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fhc.shabijichang.com}, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_5, server: lt.ktmwan.top, port: 27251, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
   - {name: YouTube梦歌|广港隧道|NETFLIX_60, server: yd.ktmwan.top, port: 27258, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_84, server: yd.qianggewangluo.buzz, port: 10816, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_33, server: dx.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|京港直连_58, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 392053a2-c18f-4914-890c-fd326ee27b4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl2.shabijichang.com}, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_66, server: yd.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_46, server: lt.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|限速节点_6, server: fs.xianyuwangluo.cyou, port: 27210, type: ss, cipher: chacha20-ietf-poly1305, password: 156419d9-fcee-4ad4-90b4-ca067d7a3ed9, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_67, server: lt.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
-  - {name: YouTube梦歌|广港隧道|Netflix_11, server: lt.ktmwan.top, port: 27253, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
-  - {name: YouTube梦歌|广港隧道|NETFLIX_179, server: 173.245.49.236, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_77, server: yd.qianggewangluo.buzz, port: 10809, type: ss, cipher: chacha20-ietf-poly1305, password: 7081b00a-6e34-4280-920f-bac6781a81aa, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_18, server: dx.ktmwan.top, port: 27255, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
+  - {name: YouTube梦歌|广港隧道|NETFLIX_41, server: dx.ktmwan.top, port: 27251, type: ss, cipher: chacha20-ietf-poly1305, password: 763f2f94-0917-40f6-8000-2b0c7b252f9d, udp: true}
+  - {name: YouTube梦歌|广港隧道|Netflix_3, server: dx.ktmwan.top, port: 27250, type: ss, cipher: chacha20-ietf-poly1305, password: 9ccaa0d7-a2bc-4931-89d0-cef3d99017b0, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|限速节点_48
-      - YouTube梦歌|广港隧道|NETFLIX_44
-      - YouTube梦歌|广港隧道|Netflix_9
-      - YouTube梦歌|广港隧道|NETFLIX_82
-      - YouTube梦歌|广港隧道|NETFLIX_65
-      - YouTube梦歌|广港隧道|NETFLIX_68
-      - YouTube梦歌|广港隧道|NETFLIX_39
-      - YouTube梦歌|广港隧道|NETFLIX_95
-      - YouTube梦歌|限速节点_9
-      - YouTube梦歌|广港隧道|NETFLIX_38
-      - YouTube梦歌|广港隧道|Netflix_27
-      - YouTube梦歌|广港隧道|Netflix_30
-      - YouTube梦歌|京港直连_8
-      - YouTube梦歌|广港隧道|NETFLIX_87
-      - YouTube梦歌|广港隧道|NETFLIX_62
-      - YouTube梦歌|广港隧道|NETFLIX_51
-      - YouTube梦歌|广港隧道|NETFLIX_94
-      - YouTube梦歌|广港隧道|NETFLIX_109
-      - YouTube梦歌|广港隧道|Netflix_6
-      - YouTube梦歌|广港隧道|NETFLIX_76
-      - YouTube梦歌|广港隧道|NETFLIX_83
-      - YouTube梦歌|广港隧道|NETFLIX_56
-      - YouTube梦歌|广港隧道|NETFLIX_53
-      - YouTube梦歌|广港隧道|NETFLIX_50
-      - YouTube梦歌|广港隧道|Netflix_13
-      - YouTube梦歌|广港隧道|Netflix_3
-      - YouTube梦歌|广港隧道|NETFLIX_79
-      - YouTube梦歌|广港隧道|Netflix_31
-      - YouTube梦歌|广港隧道|Netflix_18
-      - YouTube梦歌|广港隧道|NETFLIX_78
-      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|限速节点_6
+      - YouTube梦歌|广港隧道|NETFLIX_46
       - YouTube梦歌|广港隧道|Netflix_21
-      - YouTube梦歌|广港隧道|NETFLIX_41
-      - YouTube梦歌|广港隧道|Netflix_10
-      - YouTube梦歌|京港直连_25
+      - YouTube梦歌|广港隧道|NETFLIX_44
+      - YouTube梦歌|广港隧道|NETFLIX_69
+      - YouTube梦歌|广港隧道|Netflix_19
+      - YouTube梦歌|广港隧道|NETFLIX_53
+      - YouTube梦歌|广港隧道|Netflix_12
+      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_39
+      - YouTube梦歌|广港隧道|Netflix_6
+      - YouTube梦歌|广港隧道|NETFLIX_75
+      - YouTube梦歌|广港隧道|NETFLIX_66
+      - YouTube梦歌|广港隧道|NETFLIX_56
+      - YouTube梦歌|广港隧道|NETFLIX_72
+      - YouTube梦歌|广港隧道|Netflix_13
+      - YouTube梦歌|广港隧道|NETFLIX_51
+      - YouTube梦歌|广港隧道|NETFLIX_70
       - YouTube梦歌|广港隧道|Netflix_1
+      - YouTube梦歌|广港隧道|Netflix_27
+      - YouTube梦歌|广港隧道|NETFLIX_78
+      - YouTube梦歌|广港隧道|NETFLIX_62
+      - YouTube梦歌|广港隧道|Netflix_30
+      - YouTube梦歌|广港隧道|NETFLIX_82
+      - YouTube梦歌|广港隧道|NETFLIX_79
+      - YouTube梦歌|广港隧道|NETFLIX_50
+      - YouTube梦歌|广港隧道|NETFLIX_87
+      - YouTube梦歌|广港隧道|Netflix_31
+      - YouTube梦歌|广港隧道|Netflix_7
+      - YouTube梦歌|广港隧道|NETFLIX_153
+      - YouTube梦歌|广港隧道|NETFLIX_67
+      - YouTube梦歌|广港隧道|NETFLIX_65
+      - YouTube梦歌|广港隧道|Netflix_28
+      - YouTube梦歌|广港隧道|Netflix_10
+      - YouTube梦歌|广港隧道|NETFLIX_80
+      - YouTube梦歌|广港隧道|NETFLIX_68
       - YouTube梦歌|广港隧道|NETFLIX_74
-      - YouTube梦歌|广港隧道|NETFLIX_47
+      - YouTube梦歌|广港隧道|Netflix_24
       - YouTube梦歌|广港隧道|NETFLIX_42
       - YouTube梦歌|广港隧道|NETFLIX_48
-      - YouTube梦歌|广港隧道|NETFLIX_153
-      - YouTube梦歌|广港隧道|NETFLIX_70
-      - YouTube梦歌|广港隧道|NETFLIX_63
-      - YouTube梦歌|广港隧道|NETFLIX_75
-      - YouTube梦歌|广港隧道|Netflix_12
-      - YouTube梦歌|广港隧道|Netflix_24
-      - YouTube梦歌|京港直连_65
-      - YouTube梦歌|广港隧道|NETFLIX_54
-      - YouTube梦歌|广港隧道|Netflix_19
-      - YouTube梦歌|广港隧道|NETFLIX_59
-      - YouTube梦歌|广港隧道|Netflix_28
-      - YouTube梦歌|京港直连_86
-      - YouTube梦歌|京港直连_23
-      - YouTube梦歌|广港隧道|NETFLIX_80
-      - YouTube梦歌|广港隧道|Netflix_16
-      - YouTube梦歌|广港隧道|Netflix_7
-      - YouTube梦歌|广港隧道|NETFLIX_77
-      - YouTube梦歌|京港直连_89
-      - YouTube梦歌|广港隧道|NETFLIX_72
-      - YouTube梦歌|广港隧道|NETFLIX_69
-      - YouTube梦歌|广港隧道|Netflix_29
-      - YouTube梦歌|广港隧道|Netflix_17
-      - YouTube梦歌|广港隧道|NETFLIX_57
-      - YouTube梦歌|广港隧道|NETFLIX_40
-      - YouTube梦歌|广港隧道|Netflix_22
-      - YouTube梦歌|广港隧道|Netflix_26
-      - YouTube梦歌|京港直连_73
-      - YouTube梦歌|广港隧道|Netflix_5
       - YouTube梦歌|广港隧道|NETFLIX_60
-      - YouTube梦歌|广港隧道|NETFLIX_84
-      - YouTube梦歌|广港隧道|Netflix_33
-      - YouTube梦歌|京港直连_58
-      - YouTube梦歌|广港隧道|NETFLIX_66
-      - YouTube梦歌|广港隧道|NETFLIX_46
-      - YouTube梦歌|限速节点_6
-      - YouTube梦歌|广港隧道|NETFLIX_67
-      - YouTube梦歌|广港隧道|Netflix_11
-      - YouTube梦歌|广港隧道|NETFLIX_179
+      - YouTube梦歌|广港隧道|NETFLIX_77
+      - YouTube梦歌|广港隧道|Netflix_18
+      - YouTube梦歌|广港隧道|NETFLIX_41
+      - YouTube梦歌|广港隧道|Netflix_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - YouTube梦歌|限速节点_48
-      - YouTube梦歌|广港隧道|NETFLIX_44
-      - YouTube梦歌|广港隧道|Netflix_9
-      - YouTube梦歌|广港隧道|NETFLIX_82
-      - YouTube梦歌|广港隧道|NETFLIX_65
-      - YouTube梦歌|广港隧道|NETFLIX_68
-      - YouTube梦歌|广港隧道|NETFLIX_39
-      - YouTube梦歌|广港隧道|NETFLIX_95
-      - YouTube梦歌|限速节点_9
-      - YouTube梦歌|广港隧道|NETFLIX_38
-      - YouTube梦歌|广港隧道|Netflix_27
-      - YouTube梦歌|广港隧道|Netflix_30
-      - YouTube梦歌|京港直连_8
-      - YouTube梦歌|广港隧道|NETFLIX_87
-      - YouTube梦歌|广港隧道|NETFLIX_62
-      - YouTube梦歌|广港隧道|NETFLIX_51
-      - YouTube梦歌|广港隧道|NETFLIX_94
-      - YouTube梦歌|广港隧道|NETFLIX_109
-      - YouTube梦歌|广港隧道|Netflix_6
-      - YouTube梦歌|广港隧道|NETFLIX_76
-      - YouTube梦歌|广港隧道|NETFLIX_83
-      - YouTube梦歌|广港隧道|NETFLIX_56
-      - YouTube梦歌|广港隧道|NETFLIX_53
-      - YouTube梦歌|广港隧道|NETFLIX_50
-      - YouTube梦歌|广港隧道|Netflix_13
-      - YouTube梦歌|广港隧道|Netflix_3
-      - YouTube梦歌|广港隧道|NETFLIX_79
-      - YouTube梦歌|广港隧道|Netflix_31
-      - YouTube梦歌|广港隧道|Netflix_18
-      - YouTube梦歌|广港隧道|NETFLIX_78
-      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|限速节点_6
+      - YouTube梦歌|广港隧道|NETFLIX_46
       - YouTube梦歌|广港隧道|Netflix_21
-      - YouTube梦歌|广港隧道|NETFLIX_41
-      - YouTube梦歌|广港隧道|Netflix_10
-      - YouTube梦歌|京港直连_25
+      - YouTube梦歌|广港隧道|NETFLIX_44
+      - YouTube梦歌|广港隧道|NETFLIX_69
+      - YouTube梦歌|广港隧道|Netflix_19
+      - YouTube梦歌|广港隧道|NETFLIX_53
+      - YouTube梦歌|广港隧道|Netflix_12
+      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_39
+      - YouTube梦歌|广港隧道|Netflix_6
+      - YouTube梦歌|广港隧道|NETFLIX_75
+      - YouTube梦歌|广港隧道|NETFLIX_66
+      - YouTube梦歌|广港隧道|NETFLIX_56
+      - YouTube梦歌|广港隧道|NETFLIX_72
+      - YouTube梦歌|广港隧道|Netflix_13
+      - YouTube梦歌|广港隧道|NETFLIX_51
+      - YouTube梦歌|广港隧道|NETFLIX_70
       - YouTube梦歌|广港隧道|Netflix_1
+      - YouTube梦歌|广港隧道|Netflix_27
+      - YouTube梦歌|广港隧道|NETFLIX_78
+      - YouTube梦歌|广港隧道|NETFLIX_62
+      - YouTube梦歌|广港隧道|Netflix_30
+      - YouTube梦歌|广港隧道|NETFLIX_82
+      - YouTube梦歌|广港隧道|NETFLIX_79
+      - YouTube梦歌|广港隧道|NETFLIX_50
+      - YouTube梦歌|广港隧道|NETFLIX_87
+      - YouTube梦歌|广港隧道|Netflix_31
+      - YouTube梦歌|广港隧道|Netflix_7
+      - YouTube梦歌|广港隧道|NETFLIX_153
+      - YouTube梦歌|广港隧道|NETFLIX_67
+      - YouTube梦歌|广港隧道|NETFLIX_65
+      - YouTube梦歌|广港隧道|Netflix_28
+      - YouTube梦歌|广港隧道|Netflix_10
+      - YouTube梦歌|广港隧道|NETFLIX_80
+      - YouTube梦歌|广港隧道|NETFLIX_68
       - YouTube梦歌|广港隧道|NETFLIX_74
-      - YouTube梦歌|广港隧道|NETFLIX_47
+      - YouTube梦歌|广港隧道|Netflix_24
       - YouTube梦歌|广港隧道|NETFLIX_42
       - YouTube梦歌|广港隧道|NETFLIX_48
-      - YouTube梦歌|广港隧道|NETFLIX_153
-      - YouTube梦歌|广港隧道|NETFLIX_70
-      - YouTube梦歌|广港隧道|NETFLIX_63
-      - YouTube梦歌|广港隧道|NETFLIX_75
-      - YouTube梦歌|广港隧道|Netflix_12
-      - YouTube梦歌|广港隧道|Netflix_24
-      - YouTube梦歌|京港直连_65
-      - YouTube梦歌|广港隧道|NETFLIX_54
-      - YouTube梦歌|广港隧道|Netflix_19
-      - YouTube梦歌|广港隧道|NETFLIX_59
-      - YouTube梦歌|广港隧道|Netflix_28
-      - YouTube梦歌|京港直连_86
-      - YouTube梦歌|京港直连_23
-      - YouTube梦歌|广港隧道|NETFLIX_80
-      - YouTube梦歌|广港隧道|Netflix_16
-      - YouTube梦歌|广港隧道|Netflix_7
-      - YouTube梦歌|广港隧道|NETFLIX_77
-      - YouTube梦歌|京港直连_89
-      - YouTube梦歌|广港隧道|NETFLIX_72
-      - YouTube梦歌|广港隧道|NETFLIX_69
-      - YouTube梦歌|广港隧道|Netflix_29
-      - YouTube梦歌|广港隧道|Netflix_17
-      - YouTube梦歌|广港隧道|NETFLIX_57
-      - YouTube梦歌|广港隧道|NETFLIX_40
-      - YouTube梦歌|广港隧道|Netflix_22
-      - YouTube梦歌|广港隧道|Netflix_26
-      - YouTube梦歌|京港直连_73
-      - YouTube梦歌|广港隧道|Netflix_5
       - YouTube梦歌|广港隧道|NETFLIX_60
-      - YouTube梦歌|广港隧道|NETFLIX_84
-      - YouTube梦歌|广港隧道|Netflix_33
-      - YouTube梦歌|京港直连_58
-      - YouTube梦歌|广港隧道|NETFLIX_66
-      - YouTube梦歌|广港隧道|NETFLIX_46
-      - YouTube梦歌|限速节点_6
-      - YouTube梦歌|广港隧道|NETFLIX_67
-      - YouTube梦歌|广港隧道|Netflix_11
-      - YouTube梦歌|广港隧道|NETFLIX_179
+      - YouTube梦歌|广港隧道|NETFLIX_77
+      - YouTube梦歌|广港隧道|Netflix_18
+      - YouTube梦歌|广港隧道|NETFLIX_41
+      - YouTube梦歌|广港隧道|Netflix_3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|限速节点_48
-      - YouTube梦歌|广港隧道|NETFLIX_44
-      - YouTube梦歌|广港隧道|Netflix_9
-      - YouTube梦歌|广港隧道|NETFLIX_82
-      - YouTube梦歌|广港隧道|NETFLIX_65
-      - YouTube梦歌|广港隧道|NETFLIX_68
-      - YouTube梦歌|广港隧道|NETFLIX_39
-      - YouTube梦歌|广港隧道|NETFLIX_95
-      - YouTube梦歌|限速节点_9
-      - YouTube梦歌|广港隧道|NETFLIX_38
-      - YouTube梦歌|广港隧道|Netflix_27
-      - YouTube梦歌|广港隧道|Netflix_30
-      - YouTube梦歌|京港直连_8
-      - YouTube梦歌|广港隧道|NETFLIX_87
-      - YouTube梦歌|广港隧道|NETFLIX_62
-      - YouTube梦歌|广港隧道|NETFLIX_51
-      - YouTube梦歌|广港隧道|NETFLIX_94
-      - YouTube梦歌|广港隧道|NETFLIX_109
-      - YouTube梦歌|广港隧道|Netflix_6
-      - YouTube梦歌|广港隧道|NETFLIX_76
-      - YouTube梦歌|广港隧道|NETFLIX_83
-      - YouTube梦歌|广港隧道|NETFLIX_56
-      - YouTube梦歌|广港隧道|NETFLIX_53
-      - YouTube梦歌|广港隧道|NETFLIX_50
-      - YouTube梦歌|广港隧道|Netflix_13
-      - YouTube梦歌|广港隧道|Netflix_3
-      - YouTube梦歌|广港隧道|NETFLIX_79
-      - YouTube梦歌|广港隧道|Netflix_31
-      - YouTube梦歌|广港隧道|Netflix_18
-      - YouTube梦歌|广港隧道|NETFLIX_78
-      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|限速节点_6
+      - YouTube梦歌|广港隧道|NETFLIX_46
       - YouTube梦歌|广港隧道|Netflix_21
-      - YouTube梦歌|广港隧道|NETFLIX_41
-      - YouTube梦歌|广港隧道|Netflix_10
-      - YouTube梦歌|京港直连_25
+      - YouTube梦歌|广港隧道|NETFLIX_44
+      - YouTube梦歌|广港隧道|NETFLIX_69
+      - YouTube梦歌|广港隧道|Netflix_19
+      - YouTube梦歌|广港隧道|NETFLIX_53
+      - YouTube梦歌|广港隧道|Netflix_12
+      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_39
+      - YouTube梦歌|广港隧道|Netflix_6
+      - YouTube梦歌|广港隧道|NETFLIX_75
+      - YouTube梦歌|广港隧道|NETFLIX_66
+      - YouTube梦歌|广港隧道|NETFLIX_56
+      - YouTube梦歌|广港隧道|NETFLIX_72
+      - YouTube梦歌|广港隧道|Netflix_13
+      - YouTube梦歌|广港隧道|NETFLIX_51
+      - YouTube梦歌|广港隧道|NETFLIX_70
       - YouTube梦歌|广港隧道|Netflix_1
+      - YouTube梦歌|广港隧道|Netflix_27
+      - YouTube梦歌|广港隧道|NETFLIX_78
+      - YouTube梦歌|广港隧道|NETFLIX_62
+      - YouTube梦歌|广港隧道|Netflix_30
+      - YouTube梦歌|广港隧道|NETFLIX_82
+      - YouTube梦歌|广港隧道|NETFLIX_79
+      - YouTube梦歌|广港隧道|NETFLIX_50
+      - YouTube梦歌|广港隧道|NETFLIX_87
+      - YouTube梦歌|广港隧道|Netflix_31
+      - YouTube梦歌|广港隧道|Netflix_7
+      - YouTube梦歌|广港隧道|NETFLIX_153
+      - YouTube梦歌|广港隧道|NETFLIX_67
+      - YouTube梦歌|广港隧道|NETFLIX_65
+      - YouTube梦歌|广港隧道|Netflix_28
+      - YouTube梦歌|广港隧道|Netflix_10
+      - YouTube梦歌|广港隧道|NETFLIX_80
+      - YouTube梦歌|广港隧道|NETFLIX_68
       - YouTube梦歌|广港隧道|NETFLIX_74
-      - YouTube梦歌|广港隧道|NETFLIX_47
+      - YouTube梦歌|广港隧道|Netflix_24
       - YouTube梦歌|广港隧道|NETFLIX_42
       - YouTube梦歌|广港隧道|NETFLIX_48
-      - YouTube梦歌|广港隧道|NETFLIX_153
-      - YouTube梦歌|广港隧道|NETFLIX_70
-      - YouTube梦歌|广港隧道|NETFLIX_63
-      - YouTube梦歌|广港隧道|NETFLIX_75
-      - YouTube梦歌|广港隧道|Netflix_12
-      - YouTube梦歌|广港隧道|Netflix_24
-      - YouTube梦歌|京港直连_65
-      - YouTube梦歌|广港隧道|NETFLIX_54
-      - YouTube梦歌|广港隧道|Netflix_19
-      - YouTube梦歌|广港隧道|NETFLIX_59
-      - YouTube梦歌|广港隧道|Netflix_28
-      - YouTube梦歌|京港直连_86
-      - YouTube梦歌|京港直连_23
-      - YouTube梦歌|广港隧道|NETFLIX_80
-      - YouTube梦歌|广港隧道|Netflix_16
-      - YouTube梦歌|广港隧道|Netflix_7
-      - YouTube梦歌|广港隧道|NETFLIX_77
-      - YouTube梦歌|京港直连_89
-      - YouTube梦歌|广港隧道|NETFLIX_72
-      - YouTube梦歌|广港隧道|NETFLIX_69
-      - YouTube梦歌|广港隧道|Netflix_29
-      - YouTube梦歌|广港隧道|Netflix_17
-      - YouTube梦歌|广港隧道|NETFLIX_57
-      - YouTube梦歌|广港隧道|NETFLIX_40
-      - YouTube梦歌|广港隧道|Netflix_22
-      - YouTube梦歌|广港隧道|Netflix_26
-      - YouTube梦歌|京港直连_73
-      - YouTube梦歌|广港隧道|Netflix_5
       - YouTube梦歌|广港隧道|NETFLIX_60
-      - YouTube梦歌|广港隧道|NETFLIX_84
-      - YouTube梦歌|广港隧道|Netflix_33
-      - YouTube梦歌|京港直连_58
-      - YouTube梦歌|广港隧道|NETFLIX_66
-      - YouTube梦歌|广港隧道|NETFLIX_46
-      - YouTube梦歌|限速节点_6
-      - YouTube梦歌|广港隧道|NETFLIX_67
-      - YouTube梦歌|广港隧道|Netflix_11
-      - YouTube梦歌|广港隧道|NETFLIX_179
+      - YouTube梦歌|广港隧道|NETFLIX_77
+      - YouTube梦歌|广港隧道|Netflix_18
+      - YouTube梦歌|广港隧道|NETFLIX_41
+      - YouTube梦歌|广港隧道|Netflix_3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -352,414 +220,251 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|限速节点_48
-      - YouTube梦歌|广港隧道|NETFLIX_44
-      - YouTube梦歌|广港隧道|Netflix_9
-      - YouTube梦歌|广港隧道|NETFLIX_82
-      - YouTube梦歌|广港隧道|NETFLIX_65
-      - YouTube梦歌|广港隧道|NETFLIX_68
-      - YouTube梦歌|广港隧道|NETFLIX_39
-      - YouTube梦歌|广港隧道|NETFLIX_95
-      - YouTube梦歌|限速节点_9
-      - YouTube梦歌|广港隧道|NETFLIX_38
-      - YouTube梦歌|广港隧道|Netflix_27
-      - YouTube梦歌|广港隧道|Netflix_30
-      - YouTube梦歌|京港直连_8
-      - YouTube梦歌|广港隧道|NETFLIX_87
-      - YouTube梦歌|广港隧道|NETFLIX_62
-      - YouTube梦歌|广港隧道|NETFLIX_51
-      - YouTube梦歌|广港隧道|NETFLIX_94
-      - YouTube梦歌|广港隧道|NETFLIX_109
-      - YouTube梦歌|广港隧道|Netflix_6
-      - YouTube梦歌|广港隧道|NETFLIX_76
-      - YouTube梦歌|广港隧道|NETFLIX_83
-      - YouTube梦歌|广港隧道|NETFLIX_56
-      - YouTube梦歌|广港隧道|NETFLIX_53
-      - YouTube梦歌|广港隧道|NETFLIX_50
-      - YouTube梦歌|广港隧道|Netflix_13
-      - YouTube梦歌|广港隧道|Netflix_3
-      - YouTube梦歌|广港隧道|NETFLIX_79
-      - YouTube梦歌|广港隧道|Netflix_31
-      - YouTube梦歌|广港隧道|Netflix_18
-      - YouTube梦歌|广港隧道|NETFLIX_78
-      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|限速节点_6
+      - YouTube梦歌|广港隧道|NETFLIX_46
       - YouTube梦歌|广港隧道|Netflix_21
-      - YouTube梦歌|广港隧道|NETFLIX_41
-      - YouTube梦歌|广港隧道|Netflix_10
-      - YouTube梦歌|京港直连_25
+      - YouTube梦歌|广港隧道|NETFLIX_44
+      - YouTube梦歌|广港隧道|NETFLIX_69
+      - YouTube梦歌|广港隧道|Netflix_19
+      - YouTube梦歌|广港隧道|NETFLIX_53
+      - YouTube梦歌|广港隧道|Netflix_12
+      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_39
+      - YouTube梦歌|广港隧道|Netflix_6
+      - YouTube梦歌|广港隧道|NETFLIX_75
+      - YouTube梦歌|广港隧道|NETFLIX_66
+      - YouTube梦歌|广港隧道|NETFLIX_56
+      - YouTube梦歌|广港隧道|NETFLIX_72
+      - YouTube梦歌|广港隧道|Netflix_13
+      - YouTube梦歌|广港隧道|NETFLIX_51
+      - YouTube梦歌|广港隧道|NETFLIX_70
       - YouTube梦歌|广港隧道|Netflix_1
+      - YouTube梦歌|广港隧道|Netflix_27
+      - YouTube梦歌|广港隧道|NETFLIX_78
+      - YouTube梦歌|广港隧道|NETFLIX_62
+      - YouTube梦歌|广港隧道|Netflix_30
+      - YouTube梦歌|广港隧道|NETFLIX_82
+      - YouTube梦歌|广港隧道|NETFLIX_79
+      - YouTube梦歌|广港隧道|NETFLIX_50
+      - YouTube梦歌|广港隧道|NETFLIX_87
+      - YouTube梦歌|广港隧道|Netflix_31
+      - YouTube梦歌|广港隧道|Netflix_7
+      - YouTube梦歌|广港隧道|NETFLIX_153
+      - YouTube梦歌|广港隧道|NETFLIX_67
+      - YouTube梦歌|广港隧道|NETFLIX_65
+      - YouTube梦歌|广港隧道|Netflix_28
+      - YouTube梦歌|广港隧道|Netflix_10
+      - YouTube梦歌|广港隧道|NETFLIX_80
+      - YouTube梦歌|广港隧道|NETFLIX_68
       - YouTube梦歌|广港隧道|NETFLIX_74
-      - YouTube梦歌|广港隧道|NETFLIX_47
+      - YouTube梦歌|广港隧道|Netflix_24
       - YouTube梦歌|广港隧道|NETFLIX_42
       - YouTube梦歌|广港隧道|NETFLIX_48
-      - YouTube梦歌|广港隧道|NETFLIX_153
-      - YouTube梦歌|广港隧道|NETFLIX_70
-      - YouTube梦歌|广港隧道|NETFLIX_63
-      - YouTube梦歌|广港隧道|NETFLIX_75
-      - YouTube梦歌|广港隧道|Netflix_12
-      - YouTube梦歌|广港隧道|Netflix_24
-      - YouTube梦歌|京港直连_65
-      - YouTube梦歌|广港隧道|NETFLIX_54
-      - YouTube梦歌|广港隧道|Netflix_19
-      - YouTube梦歌|广港隧道|NETFLIX_59
-      - YouTube梦歌|广港隧道|Netflix_28
-      - YouTube梦歌|京港直连_86
-      - YouTube梦歌|京港直连_23
-      - YouTube梦歌|广港隧道|NETFLIX_80
-      - YouTube梦歌|广港隧道|Netflix_16
-      - YouTube梦歌|广港隧道|Netflix_7
-      - YouTube梦歌|广港隧道|NETFLIX_77
-      - YouTube梦歌|京港直连_89
-      - YouTube梦歌|广港隧道|NETFLIX_72
-      - YouTube梦歌|广港隧道|NETFLIX_69
-      - YouTube梦歌|广港隧道|Netflix_29
-      - YouTube梦歌|广港隧道|Netflix_17
-      - YouTube梦歌|广港隧道|NETFLIX_57
-      - YouTube梦歌|广港隧道|NETFLIX_40
-      - YouTube梦歌|广港隧道|Netflix_22
-      - YouTube梦歌|广港隧道|Netflix_26
-      - YouTube梦歌|京港直连_73
-      - YouTube梦歌|广港隧道|Netflix_5
       - YouTube梦歌|广港隧道|NETFLIX_60
-      - YouTube梦歌|广港隧道|NETFLIX_84
-      - YouTube梦歌|广港隧道|Netflix_33
-      - YouTube梦歌|京港直连_58
-      - YouTube梦歌|广港隧道|NETFLIX_66
-      - YouTube梦歌|广港隧道|NETFLIX_46
-      - YouTube梦歌|限速节点_6
-      - YouTube梦歌|广港隧道|NETFLIX_67
-      - YouTube梦歌|广港隧道|Netflix_11
-      - YouTube梦歌|广港隧道|NETFLIX_179
+      - YouTube梦歌|广港隧道|NETFLIX_77
+      - YouTube梦歌|广港隧道|Netflix_18
+      - YouTube梦歌|广港隧道|NETFLIX_41
+      - YouTube梦歌|广港隧道|Netflix_3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - YouTube梦歌|广港隧道|NETFLIX_44
-      - YouTube梦歌|广港隧道|Netflix_9
-      - YouTube梦歌|广港隧道|NETFLIX_82
-      - YouTube梦歌|广港隧道|NETFLIX_65
-      - YouTube梦歌|广港隧道|NETFLIX_68
-      - YouTube梦歌|广港隧道|NETFLIX_39
-      - YouTube梦歌|广港隧道|NETFLIX_95
-      - YouTube梦歌|广港隧道|NETFLIX_38
-      - YouTube梦歌|广港隧道|Netflix_27
-      - YouTube梦歌|广港隧道|Netflix_30
-      - YouTube梦歌|京港直连_8
-      - YouTube梦歌|广港隧道|NETFLIX_87
-      - YouTube梦歌|广港隧道|NETFLIX_62
-      - YouTube梦歌|广港隧道|NETFLIX_51
-      - YouTube梦歌|广港隧道|NETFLIX_94
-      - YouTube梦歌|广港隧道|NETFLIX_109
-      - YouTube梦歌|广港隧道|Netflix_6
-      - YouTube梦歌|广港隧道|NETFLIX_76
-      - YouTube梦歌|广港隧道|NETFLIX_83
-      - YouTube梦歌|广港隧道|NETFLIX_56
-      - YouTube梦歌|广港隧道|NETFLIX_53
-      - YouTube梦歌|广港隧道|NETFLIX_50
-      - YouTube梦歌|广港隧道|Netflix_13
-      - YouTube梦歌|广港隧道|Netflix_3
-      - YouTube梦歌|广港隧道|NETFLIX_79
-      - YouTube梦歌|广港隧道|Netflix_31
-      - YouTube梦歌|广港隧道|Netflix_18
-      - YouTube梦歌|广港隧道|NETFLIX_78
-      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_46
       - YouTube梦歌|广港隧道|Netflix_21
-      - YouTube梦歌|广港隧道|NETFLIX_41
-      - YouTube梦歌|广港隧道|Netflix_10
-      - YouTube梦歌|京港直连_25
+      - YouTube梦歌|广港隧道|NETFLIX_44
+      - YouTube梦歌|广港隧道|NETFLIX_69
+      - YouTube梦歌|广港隧道|Netflix_19
+      - YouTube梦歌|广港隧道|NETFLIX_53
+      - YouTube梦歌|广港隧道|Netflix_12
+      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_39
+      - YouTube梦歌|广港隧道|Netflix_6
+      - YouTube梦歌|广港隧道|NETFLIX_75
+      - YouTube梦歌|广港隧道|NETFLIX_66
+      - YouTube梦歌|广港隧道|NETFLIX_56
+      - YouTube梦歌|广港隧道|NETFLIX_72
+      - YouTube梦歌|广港隧道|Netflix_13
+      - YouTube梦歌|广港隧道|NETFLIX_51
+      - YouTube梦歌|广港隧道|NETFLIX_70
       - YouTube梦歌|广港隧道|Netflix_1
+      - YouTube梦歌|广港隧道|Netflix_27
+      - YouTube梦歌|广港隧道|NETFLIX_78
+      - YouTube梦歌|广港隧道|NETFLIX_62
+      - YouTube梦歌|广港隧道|Netflix_30
+      - YouTube梦歌|广港隧道|NETFLIX_82
+      - YouTube梦歌|广港隧道|NETFLIX_79
+      - YouTube梦歌|广港隧道|NETFLIX_50
+      - YouTube梦歌|广港隧道|NETFLIX_87
+      - YouTube梦歌|广港隧道|Netflix_31
+      - YouTube梦歌|广港隧道|Netflix_7
+      - YouTube梦歌|广港隧道|NETFLIX_153
+      - YouTube梦歌|广港隧道|NETFLIX_67
+      - YouTube梦歌|广港隧道|NETFLIX_65
+      - YouTube梦歌|广港隧道|Netflix_28
+      - YouTube梦歌|广港隧道|Netflix_10
+      - YouTube梦歌|广港隧道|NETFLIX_80
+      - YouTube梦歌|广港隧道|NETFLIX_68
       - YouTube梦歌|广港隧道|NETFLIX_74
-      - YouTube梦歌|广港隧道|NETFLIX_47
+      - YouTube梦歌|广港隧道|Netflix_24
       - YouTube梦歌|广港隧道|NETFLIX_42
       - YouTube梦歌|广港隧道|NETFLIX_48
-      - YouTube梦歌|广港隧道|NETFLIX_153
-      - YouTube梦歌|广港隧道|NETFLIX_70
-      - YouTube梦歌|广港隧道|NETFLIX_63
-      - YouTube梦歌|广港隧道|NETFLIX_75
-      - YouTube梦歌|广港隧道|Netflix_12
-      - YouTube梦歌|广港隧道|Netflix_24
-      - YouTube梦歌|京港直连_65
-      - YouTube梦歌|广港隧道|NETFLIX_54
-      - YouTube梦歌|广港隧道|Netflix_19
-      - YouTube梦歌|广港隧道|NETFLIX_59
-      - YouTube梦歌|广港隧道|Netflix_28
-      - YouTube梦歌|京港直连_86
-      - YouTube梦歌|京港直连_23
-      - YouTube梦歌|广港隧道|NETFLIX_80
-      - YouTube梦歌|广港隧道|Netflix_16
-      - YouTube梦歌|广港隧道|Netflix_7
-      - YouTube梦歌|广港隧道|NETFLIX_77
-      - YouTube梦歌|京港直连_89
-      - YouTube梦歌|广港隧道|NETFLIX_72
-      - YouTube梦歌|广港隧道|NETFLIX_69
-      - YouTube梦歌|广港隧道|Netflix_29
-      - YouTube梦歌|广港隧道|Netflix_17
-      - YouTube梦歌|广港隧道|NETFLIX_57
-      - YouTube梦歌|广港隧道|NETFLIX_40
-      - YouTube梦歌|广港隧道|Netflix_22
-      - YouTube梦歌|广港隧道|Netflix_26
-      - YouTube梦歌|京港直连_73
-      - YouTube梦歌|广港隧道|Netflix_5
       - YouTube梦歌|广港隧道|NETFLIX_60
-      - YouTube梦歌|广港隧道|NETFLIX_84
-      - YouTube梦歌|广港隧道|Netflix_33
-      - YouTube梦歌|京港直连_58
-      - YouTube梦歌|广港隧道|NETFLIX_66
-      - YouTube梦歌|广港隧道|NETFLIX_46
-      - YouTube梦歌|广港隧道|NETFLIX_67
-      - YouTube梦歌|广港隧道|Netflix_11
-      - YouTube梦歌|广港隧道|NETFLIX_179
+      - YouTube梦歌|广港隧道|NETFLIX_77
+      - YouTube梦歌|广港隧道|Netflix_18
+      - YouTube梦歌|广港隧道|NETFLIX_41
+      - YouTube梦歌|广港隧道|Netflix_3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - YouTube梦歌|限速节点_48
-      - YouTube梦歌|广港隧道|NETFLIX_44
-      - YouTube梦歌|广港隧道|Netflix_9
-      - YouTube梦歌|广港隧道|NETFLIX_82
-      - YouTube梦歌|广港隧道|NETFLIX_65
-      - YouTube梦歌|广港隧道|NETFLIX_68
-      - YouTube梦歌|广港隧道|NETFLIX_39
-      - YouTube梦歌|广港隧道|NETFLIX_95
-      - YouTube梦歌|限速节点_9
-      - YouTube梦歌|广港隧道|NETFLIX_38
-      - YouTube梦歌|广港隧道|Netflix_27
-      - YouTube梦歌|广港隧道|Netflix_30
-      - YouTube梦歌|京港直连_8
-      - YouTube梦歌|广港隧道|NETFLIX_87
-      - YouTube梦歌|广港隧道|NETFLIX_62
-      - YouTube梦歌|广港隧道|NETFLIX_51
-      - YouTube梦歌|广港隧道|NETFLIX_94
-      - YouTube梦歌|广港隧道|NETFLIX_109
-      - YouTube梦歌|广港隧道|Netflix_6
-      - YouTube梦歌|广港隧道|NETFLIX_76
-      - YouTube梦歌|广港隧道|NETFLIX_83
-      - YouTube梦歌|广港隧道|NETFLIX_56
-      - YouTube梦歌|广港隧道|NETFLIX_53
-      - YouTube梦歌|广港隧道|NETFLIX_50
-      - YouTube梦歌|广港隧道|Netflix_13
-      - YouTube梦歌|广港隧道|Netflix_3
-      - YouTube梦歌|广港隧道|NETFLIX_79
-      - YouTube梦歌|广港隧道|Netflix_31
-      - YouTube梦歌|广港隧道|Netflix_18
-      - YouTube梦歌|广港隧道|NETFLIX_78
-      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|限速节点_6
+      - YouTube梦歌|广港隧道|NETFLIX_46
       - YouTube梦歌|广港隧道|Netflix_21
-      - YouTube梦歌|广港隧道|NETFLIX_41
-      - YouTube梦歌|广港隧道|Netflix_10
-      - YouTube梦歌|京港直连_25
+      - YouTube梦歌|广港隧道|NETFLIX_44
+      - YouTube梦歌|广港隧道|NETFLIX_69
+      - YouTube梦歌|广港隧道|Netflix_19
+      - YouTube梦歌|广港隧道|NETFLIX_53
+      - YouTube梦歌|广港隧道|Netflix_12
+      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_39
+      - YouTube梦歌|广港隧道|Netflix_6
+      - YouTube梦歌|广港隧道|NETFLIX_75
+      - YouTube梦歌|广港隧道|NETFLIX_66
+      - YouTube梦歌|广港隧道|NETFLIX_56
+      - YouTube梦歌|广港隧道|NETFLIX_72
+      - YouTube梦歌|广港隧道|Netflix_13
+      - YouTube梦歌|广港隧道|NETFLIX_51
+      - YouTube梦歌|广港隧道|NETFLIX_70
       - YouTube梦歌|广港隧道|Netflix_1
+      - YouTube梦歌|广港隧道|Netflix_27
+      - YouTube梦歌|广港隧道|NETFLIX_78
+      - YouTube梦歌|广港隧道|NETFLIX_62
+      - YouTube梦歌|广港隧道|Netflix_30
+      - YouTube梦歌|广港隧道|NETFLIX_82
+      - YouTube梦歌|广港隧道|NETFLIX_79
+      - YouTube梦歌|广港隧道|NETFLIX_50
+      - YouTube梦歌|广港隧道|NETFLIX_87
+      - YouTube梦歌|广港隧道|Netflix_31
+      - YouTube梦歌|广港隧道|Netflix_7
+      - YouTube梦歌|广港隧道|NETFLIX_153
+      - YouTube梦歌|广港隧道|NETFLIX_67
+      - YouTube梦歌|广港隧道|NETFLIX_65
+      - YouTube梦歌|广港隧道|Netflix_28
+      - YouTube梦歌|广港隧道|Netflix_10
+      - YouTube梦歌|广港隧道|NETFLIX_80
+      - YouTube梦歌|广港隧道|NETFLIX_68
       - YouTube梦歌|广港隧道|NETFLIX_74
-      - YouTube梦歌|广港隧道|NETFLIX_47
+      - YouTube梦歌|广港隧道|Netflix_24
       - YouTube梦歌|广港隧道|NETFLIX_42
       - YouTube梦歌|广港隧道|NETFLIX_48
-      - YouTube梦歌|广港隧道|NETFLIX_153
-      - YouTube梦歌|广港隧道|NETFLIX_70
-      - YouTube梦歌|广港隧道|NETFLIX_63
-      - YouTube梦歌|广港隧道|NETFLIX_75
-      - YouTube梦歌|广港隧道|Netflix_12
-      - YouTube梦歌|广港隧道|Netflix_24
-      - YouTube梦歌|京港直连_65
-      - YouTube梦歌|广港隧道|NETFLIX_54
-      - YouTube梦歌|广港隧道|Netflix_19
-      - YouTube梦歌|广港隧道|NETFLIX_59
-      - YouTube梦歌|广港隧道|Netflix_28
-      - YouTube梦歌|京港直连_86
-      - YouTube梦歌|京港直连_23
-      - YouTube梦歌|广港隧道|NETFLIX_80
-      - YouTube梦歌|广港隧道|Netflix_16
-      - YouTube梦歌|广港隧道|Netflix_7
-      - YouTube梦歌|广港隧道|NETFLIX_77
-      - YouTube梦歌|京港直连_89
-      - YouTube梦歌|广港隧道|NETFLIX_72
-      - YouTube梦歌|广港隧道|NETFLIX_69
-      - YouTube梦歌|广港隧道|Netflix_29
-      - YouTube梦歌|广港隧道|Netflix_17
-      - YouTube梦歌|广港隧道|NETFLIX_57
-      - YouTube梦歌|广港隧道|NETFLIX_40
-      - YouTube梦歌|广港隧道|Netflix_22
-      - YouTube梦歌|广港隧道|Netflix_26
-      - YouTube梦歌|京港直连_73
-      - YouTube梦歌|广港隧道|Netflix_5
       - YouTube梦歌|广港隧道|NETFLIX_60
-      - YouTube梦歌|广港隧道|NETFLIX_84
-      - YouTube梦歌|广港隧道|Netflix_33
-      - YouTube梦歌|京港直连_58
-      - YouTube梦歌|广港隧道|NETFLIX_66
-      - YouTube梦歌|广港隧道|NETFLIX_46
-      - YouTube梦歌|限速节点_6
-      - YouTube梦歌|广港隧道|NETFLIX_67
-      - YouTube梦歌|广港隧道|Netflix_11
-      - YouTube梦歌|广港隧道|NETFLIX_179
+      - YouTube梦歌|广港隧道|NETFLIX_77
+      - YouTube梦歌|广港隧道|Netflix_18
+      - YouTube梦歌|广港隧道|NETFLIX_41
+      - YouTube梦歌|广港隧道|Netflix_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - YouTube梦歌|限速节点_48
-      - YouTube梦歌|广港隧道|NETFLIX_44
-      - YouTube梦歌|广港隧道|Netflix_9
-      - YouTube梦歌|广港隧道|NETFLIX_82
-      - YouTube梦歌|广港隧道|NETFLIX_65
-      - YouTube梦歌|广港隧道|NETFLIX_68
-      - YouTube梦歌|广港隧道|NETFLIX_39
-      - YouTube梦歌|广港隧道|NETFLIX_95
-      - YouTube梦歌|限速节点_9
-      - YouTube梦歌|广港隧道|NETFLIX_38
-      - YouTube梦歌|广港隧道|Netflix_27
-      - YouTube梦歌|广港隧道|Netflix_30
-      - YouTube梦歌|京港直连_8
-      - YouTube梦歌|广港隧道|NETFLIX_87
-      - YouTube梦歌|广港隧道|NETFLIX_62
-      - YouTube梦歌|广港隧道|NETFLIX_51
-      - YouTube梦歌|广港隧道|NETFLIX_94
-      - YouTube梦歌|广港隧道|NETFLIX_109
-      - YouTube梦歌|广港隧道|Netflix_6
-      - YouTube梦歌|广港隧道|NETFLIX_76
-      - YouTube梦歌|广港隧道|NETFLIX_83
-      - YouTube梦歌|广港隧道|NETFLIX_56
-      - YouTube梦歌|广港隧道|NETFLIX_53
-      - YouTube梦歌|广港隧道|NETFLIX_50
-      - YouTube梦歌|广港隧道|Netflix_13
-      - YouTube梦歌|广港隧道|Netflix_3
-      - YouTube梦歌|广港隧道|NETFLIX_79
-      - YouTube梦歌|广港隧道|Netflix_31
-      - YouTube梦歌|广港隧道|Netflix_18
-      - YouTube梦歌|广港隧道|NETFLIX_78
-      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|限速节点_6
+      - YouTube梦歌|广港隧道|NETFLIX_46
       - YouTube梦歌|广港隧道|Netflix_21
-      - YouTube梦歌|广港隧道|NETFLIX_41
-      - YouTube梦歌|广港隧道|Netflix_10
-      - YouTube梦歌|京港直连_25
+      - YouTube梦歌|广港隧道|NETFLIX_44
+      - YouTube梦歌|广港隧道|NETFLIX_69
+      - YouTube梦歌|广港隧道|Netflix_19
+      - YouTube梦歌|广港隧道|NETFLIX_53
+      - YouTube梦歌|广港隧道|Netflix_12
+      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_39
+      - YouTube梦歌|广港隧道|Netflix_6
+      - YouTube梦歌|广港隧道|NETFLIX_75
+      - YouTube梦歌|广港隧道|NETFLIX_66
+      - YouTube梦歌|广港隧道|NETFLIX_56
+      - YouTube梦歌|广港隧道|NETFLIX_72
+      - YouTube梦歌|广港隧道|Netflix_13
+      - YouTube梦歌|广港隧道|NETFLIX_51
+      - YouTube梦歌|广港隧道|NETFLIX_70
       - YouTube梦歌|广港隧道|Netflix_1
+      - YouTube梦歌|广港隧道|Netflix_27
+      - YouTube梦歌|广港隧道|NETFLIX_78
+      - YouTube梦歌|广港隧道|NETFLIX_62
+      - YouTube梦歌|广港隧道|Netflix_30
+      - YouTube梦歌|广港隧道|NETFLIX_82
+      - YouTube梦歌|广港隧道|NETFLIX_79
+      - YouTube梦歌|广港隧道|NETFLIX_50
+      - YouTube梦歌|广港隧道|NETFLIX_87
+      - YouTube梦歌|广港隧道|Netflix_31
+      - YouTube梦歌|广港隧道|Netflix_7
+      - YouTube梦歌|广港隧道|NETFLIX_153
+      - YouTube梦歌|广港隧道|NETFLIX_67
+      - YouTube梦歌|广港隧道|NETFLIX_65
+      - YouTube梦歌|广港隧道|Netflix_28
+      - YouTube梦歌|广港隧道|Netflix_10
+      - YouTube梦歌|广港隧道|NETFLIX_80
+      - YouTube梦歌|广港隧道|NETFLIX_68
       - YouTube梦歌|广港隧道|NETFLIX_74
-      - YouTube梦歌|广港隧道|NETFLIX_47
+      - YouTube梦歌|广港隧道|Netflix_24
       - YouTube梦歌|广港隧道|NETFLIX_42
       - YouTube梦歌|广港隧道|NETFLIX_48
-      - YouTube梦歌|广港隧道|NETFLIX_153
-      - YouTube梦歌|广港隧道|NETFLIX_70
-      - YouTube梦歌|广港隧道|NETFLIX_63
-      - YouTube梦歌|广港隧道|NETFLIX_75
-      - YouTube梦歌|广港隧道|Netflix_12
-      - YouTube梦歌|广港隧道|Netflix_24
-      - YouTube梦歌|京港直连_65
-      - YouTube梦歌|广港隧道|NETFLIX_54
-      - YouTube梦歌|广港隧道|Netflix_19
-      - YouTube梦歌|广港隧道|NETFLIX_59
-      - YouTube梦歌|广港隧道|Netflix_28
-      - YouTube梦歌|京港直连_86
-      - YouTube梦歌|京港直连_23
-      - YouTube梦歌|广港隧道|NETFLIX_80
-      - YouTube梦歌|广港隧道|Netflix_16
-      - YouTube梦歌|广港隧道|Netflix_7
-      - YouTube梦歌|广港隧道|NETFLIX_77
-      - YouTube梦歌|京港直连_89
-      - YouTube梦歌|广港隧道|NETFLIX_72
-      - YouTube梦歌|广港隧道|NETFLIX_69
-      - YouTube梦歌|广港隧道|Netflix_29
-      - YouTube梦歌|广港隧道|Netflix_17
-      - YouTube梦歌|广港隧道|NETFLIX_57
-      - YouTube梦歌|广港隧道|NETFLIX_40
-      - YouTube梦歌|广港隧道|Netflix_22
-      - YouTube梦歌|广港隧道|Netflix_26
-      - YouTube梦歌|京港直连_73
-      - YouTube梦歌|广港隧道|Netflix_5
       - YouTube梦歌|广港隧道|NETFLIX_60
-      - YouTube梦歌|广港隧道|NETFLIX_84
-      - YouTube梦歌|广港隧道|Netflix_33
-      - YouTube梦歌|京港直连_58
-      - YouTube梦歌|广港隧道|NETFLIX_66
-      - YouTube梦歌|广港隧道|NETFLIX_46
-      - YouTube梦歌|限速节点_6
-      - YouTube梦歌|广港隧道|NETFLIX_67
-      - YouTube梦歌|广港隧道|Netflix_11
-      - YouTube梦歌|广港隧道|NETFLIX_179
+      - YouTube梦歌|广港隧道|NETFLIX_77
+      - YouTube梦歌|广港隧道|Netflix_18
+      - YouTube梦歌|广港隧道|NETFLIX_41
+      - YouTube梦歌|广港隧道|Netflix_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌|限速节点_48
-      - YouTube梦歌|广港隧道|NETFLIX_44
-      - YouTube梦歌|广港隧道|Netflix_9
-      - YouTube梦歌|广港隧道|NETFLIX_82
-      - YouTube梦歌|广港隧道|NETFLIX_65
-      - YouTube梦歌|广港隧道|NETFLIX_68
-      - YouTube梦歌|广港隧道|NETFLIX_39
-      - YouTube梦歌|广港隧道|NETFLIX_95
-      - YouTube梦歌|限速节点_9
-      - YouTube梦歌|广港隧道|NETFLIX_38
-      - YouTube梦歌|广港隧道|Netflix_27
-      - YouTube梦歌|广港隧道|Netflix_30
-      - YouTube梦歌|京港直连_8
-      - YouTube梦歌|广港隧道|NETFLIX_87
-      - YouTube梦歌|广港隧道|NETFLIX_62
-      - YouTube梦歌|广港隧道|NETFLIX_51
-      - YouTube梦歌|广港隧道|NETFLIX_94
-      - YouTube梦歌|广港隧道|NETFLIX_109
-      - YouTube梦歌|广港隧道|Netflix_6
-      - YouTube梦歌|广港隧道|NETFLIX_76
-      - YouTube梦歌|广港隧道|NETFLIX_83
-      - YouTube梦歌|广港隧道|NETFLIX_56
-      - YouTube梦歌|广港隧道|NETFLIX_53
-      - YouTube梦歌|广港隧道|NETFLIX_50
-      - YouTube梦歌|广港隧道|Netflix_13
-      - YouTube梦歌|广港隧道|Netflix_3
-      - YouTube梦歌|广港隧道|NETFLIX_79
-      - YouTube梦歌|广港隧道|Netflix_31
-      - YouTube梦歌|广港隧道|Netflix_18
-      - YouTube梦歌|广港隧道|NETFLIX_78
-      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|限速节点_6
+      - YouTube梦歌|广港隧道|NETFLIX_46
       - YouTube梦歌|广港隧道|Netflix_21
-      - YouTube梦歌|广港隧道|NETFLIX_41
-      - YouTube梦歌|广港隧道|Netflix_10
-      - YouTube梦歌|京港直连_25
+      - YouTube梦歌|广港隧道|NETFLIX_44
+      - YouTube梦歌|广港隧道|NETFLIX_69
+      - YouTube梦歌|广港隧道|Netflix_19
+      - YouTube梦歌|广港隧道|NETFLIX_53
+      - YouTube梦歌|广港隧道|Netflix_12
+      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_39
+      - YouTube梦歌|广港隧道|Netflix_6
+      - YouTube梦歌|广港隧道|NETFLIX_75
+      - YouTube梦歌|广港隧道|NETFLIX_66
+      - YouTube梦歌|广港隧道|NETFLIX_56
+      - YouTube梦歌|广港隧道|NETFLIX_72
+      - YouTube梦歌|广港隧道|Netflix_13
+      - YouTube梦歌|广港隧道|NETFLIX_51
+      - YouTube梦歌|广港隧道|NETFLIX_70
       - YouTube梦歌|广港隧道|Netflix_1
+      - YouTube梦歌|广港隧道|Netflix_27
+      - YouTube梦歌|广港隧道|NETFLIX_78
+      - YouTube梦歌|广港隧道|NETFLIX_62
+      - YouTube梦歌|广港隧道|Netflix_30
+      - YouTube梦歌|广港隧道|NETFLIX_82
+      - YouTube梦歌|广港隧道|NETFLIX_79
+      - YouTube梦歌|广港隧道|NETFLIX_50
+      - YouTube梦歌|广港隧道|NETFLIX_87
+      - YouTube梦歌|广港隧道|Netflix_31
+      - YouTube梦歌|广港隧道|Netflix_7
+      - YouTube梦歌|广港隧道|NETFLIX_153
+      - YouTube梦歌|广港隧道|NETFLIX_67
+      - YouTube梦歌|广港隧道|NETFLIX_65
+      - YouTube梦歌|广港隧道|Netflix_28
+      - YouTube梦歌|广港隧道|Netflix_10
+      - YouTube梦歌|广港隧道|NETFLIX_80
+      - YouTube梦歌|广港隧道|NETFLIX_68
       - YouTube梦歌|广港隧道|NETFLIX_74
-      - YouTube梦歌|广港隧道|NETFLIX_47
+      - YouTube梦歌|广港隧道|Netflix_24
       - YouTube梦歌|广港隧道|NETFLIX_42
       - YouTube梦歌|广港隧道|NETFLIX_48
-      - YouTube梦歌|广港隧道|NETFLIX_153
-      - YouTube梦歌|广港隧道|NETFLIX_70
-      - YouTube梦歌|广港隧道|NETFLIX_63
-      - YouTube梦歌|广港隧道|NETFLIX_75
-      - YouTube梦歌|广港隧道|Netflix_12
-      - YouTube梦歌|广港隧道|Netflix_24
-      - YouTube梦歌|京港直连_65
-      - YouTube梦歌|广港隧道|NETFLIX_54
-      - YouTube梦歌|广港隧道|Netflix_19
-      - YouTube梦歌|广港隧道|NETFLIX_59
-      - YouTube梦歌|广港隧道|Netflix_28
-      - YouTube梦歌|京港直连_86
-      - YouTube梦歌|京港直连_23
-      - YouTube梦歌|广港隧道|NETFLIX_80
-      - YouTube梦歌|广港隧道|Netflix_16
-      - YouTube梦歌|广港隧道|Netflix_7
-      - YouTube梦歌|广港隧道|NETFLIX_77
-      - YouTube梦歌|京港直连_89
-      - YouTube梦歌|广港隧道|NETFLIX_72
-      - YouTube梦歌|广港隧道|NETFLIX_69
-      - YouTube梦歌|广港隧道|Netflix_29
-      - YouTube梦歌|广港隧道|Netflix_17
-      - YouTube梦歌|广港隧道|NETFLIX_57
-      - YouTube梦歌|广港隧道|NETFLIX_40
-      - YouTube梦歌|广港隧道|Netflix_22
-      - YouTube梦歌|广港隧道|Netflix_26
-      - YouTube梦歌|京港直连_73
-      - YouTube梦歌|广港隧道|Netflix_5
       - YouTube梦歌|广港隧道|NETFLIX_60
-      - YouTube梦歌|广港隧道|NETFLIX_84
-      - YouTube梦歌|广港隧道|Netflix_33
-      - YouTube梦歌|京港直连_58
-      - YouTube梦歌|广港隧道|NETFLIX_66
-      - YouTube梦歌|广港隧道|NETFLIX_46
-      - YouTube梦歌|限速节点_6
-      - YouTube梦歌|广港隧道|NETFLIX_67
-      - YouTube梦歌|广港隧道|Netflix_11
-      - YouTube梦歌|广港隧道|NETFLIX_179
+      - YouTube梦歌|广港隧道|NETFLIX_77
+      - YouTube梦歌|广港隧道|Netflix_18
+      - YouTube梦歌|广港隧道|NETFLIX_41
+      - YouTube梦歌|广港隧道|Netflix_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -775,84 +480,51 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌|限速节点_48
-      - YouTube梦歌|广港隧道|NETFLIX_44
-      - YouTube梦歌|广港隧道|Netflix_9
-      - YouTube梦歌|广港隧道|NETFLIX_82
-      - YouTube梦歌|广港隧道|NETFLIX_65
-      - YouTube梦歌|广港隧道|NETFLIX_68
-      - YouTube梦歌|广港隧道|NETFLIX_39
-      - YouTube梦歌|广港隧道|NETFLIX_95
-      - YouTube梦歌|限速节点_9
-      - YouTube梦歌|广港隧道|NETFLIX_38
-      - YouTube梦歌|广港隧道|Netflix_27
-      - YouTube梦歌|广港隧道|Netflix_30
-      - YouTube梦歌|京港直连_8
-      - YouTube梦歌|广港隧道|NETFLIX_87
-      - YouTube梦歌|广港隧道|NETFLIX_62
-      - YouTube梦歌|广港隧道|NETFLIX_51
-      - YouTube梦歌|广港隧道|NETFLIX_94
-      - YouTube梦歌|广港隧道|NETFLIX_109
-      - YouTube梦歌|广港隧道|Netflix_6
-      - YouTube梦歌|广港隧道|NETFLIX_76
-      - YouTube梦歌|广港隧道|NETFLIX_83
-      - YouTube梦歌|广港隧道|NETFLIX_56
-      - YouTube梦歌|广港隧道|NETFLIX_53
-      - YouTube梦歌|广港隧道|NETFLIX_50
-      - YouTube梦歌|广港隧道|Netflix_13
-      - YouTube梦歌|广港隧道|Netflix_3
-      - YouTube梦歌|广港隧道|NETFLIX_79
-      - YouTube梦歌|广港隧道|Netflix_31
-      - YouTube梦歌|广港隧道|Netflix_18
-      - YouTube梦歌|广港隧道|NETFLIX_78
-      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|限速节点_6
+      - YouTube梦歌|广港隧道|NETFLIX_46
       - YouTube梦歌|广港隧道|Netflix_21
-      - YouTube梦歌|广港隧道|NETFLIX_41
-      - YouTube梦歌|广港隧道|Netflix_10
-      - YouTube梦歌|京港直连_25
+      - YouTube梦歌|广港隧道|NETFLIX_44
+      - YouTube梦歌|广港隧道|NETFLIX_69
+      - YouTube梦歌|广港隧道|Netflix_19
+      - YouTube梦歌|广港隧道|NETFLIX_53
+      - YouTube梦歌|广港隧道|Netflix_12
+      - YouTube梦歌|广港隧道|Netflix_15
+      - YouTube梦歌|广港隧道|NETFLIX_39
+      - YouTube梦歌|广港隧道|Netflix_6
+      - YouTube梦歌|广港隧道|NETFLIX_75
+      - YouTube梦歌|广港隧道|NETFLIX_66
+      - YouTube梦歌|广港隧道|NETFLIX_56
+      - YouTube梦歌|广港隧道|NETFLIX_72
+      - YouTube梦歌|广港隧道|Netflix_13
+      - YouTube梦歌|广港隧道|NETFLIX_51
+      - YouTube梦歌|广港隧道|NETFLIX_70
       - YouTube梦歌|广港隧道|Netflix_1
+      - YouTube梦歌|广港隧道|Netflix_27
+      - YouTube梦歌|广港隧道|NETFLIX_78
+      - YouTube梦歌|广港隧道|NETFLIX_62
+      - YouTube梦歌|广港隧道|Netflix_30
+      - YouTube梦歌|广港隧道|NETFLIX_82
+      - YouTube梦歌|广港隧道|NETFLIX_79
+      - YouTube梦歌|广港隧道|NETFLIX_50
+      - YouTube梦歌|广港隧道|NETFLIX_87
+      - YouTube梦歌|广港隧道|Netflix_31
+      - YouTube梦歌|广港隧道|Netflix_7
+      - YouTube梦歌|广港隧道|NETFLIX_153
+      - YouTube梦歌|广港隧道|NETFLIX_67
+      - YouTube梦歌|广港隧道|NETFLIX_65
+      - YouTube梦歌|广港隧道|Netflix_28
+      - YouTube梦歌|广港隧道|Netflix_10
+      - YouTube梦歌|广港隧道|NETFLIX_80
+      - YouTube梦歌|广港隧道|NETFLIX_68
       - YouTube梦歌|广港隧道|NETFLIX_74
-      - YouTube梦歌|广港隧道|NETFLIX_47
+      - YouTube梦歌|广港隧道|Netflix_24
       - YouTube梦歌|广港隧道|NETFLIX_42
       - YouTube梦歌|广港隧道|NETFLIX_48
-      - YouTube梦歌|广港隧道|NETFLIX_153
-      - YouTube梦歌|广港隧道|NETFLIX_70
-      - YouTube梦歌|广港隧道|NETFLIX_63
-      - YouTube梦歌|广港隧道|NETFLIX_75
-      - YouTube梦歌|广港隧道|Netflix_12
-      - YouTube梦歌|广港隧道|Netflix_24
-      - YouTube梦歌|京港直连_65
-      - YouTube梦歌|广港隧道|NETFLIX_54
-      - YouTube梦歌|广港隧道|Netflix_19
-      - YouTube梦歌|广港隧道|NETFLIX_59
-      - YouTube梦歌|广港隧道|Netflix_28
-      - YouTube梦歌|京港直连_86
-      - YouTube梦歌|京港直连_23
-      - YouTube梦歌|广港隧道|NETFLIX_80
-      - YouTube梦歌|广港隧道|Netflix_16
-      - YouTube梦歌|广港隧道|Netflix_7
-      - YouTube梦歌|广港隧道|NETFLIX_77
-      - YouTube梦歌|京港直连_89
-      - YouTube梦歌|广港隧道|NETFLIX_72
-      - YouTube梦歌|广港隧道|NETFLIX_69
-      - YouTube梦歌|广港隧道|Netflix_29
-      - YouTube梦歌|广港隧道|Netflix_17
-      - YouTube梦歌|广港隧道|NETFLIX_57
-      - YouTube梦歌|广港隧道|NETFLIX_40
-      - YouTube梦歌|广港隧道|Netflix_22
-      - YouTube梦歌|广港隧道|Netflix_26
-      - YouTube梦歌|京港直连_73
-      - YouTube梦歌|广港隧道|Netflix_5
       - YouTube梦歌|广港隧道|NETFLIX_60
-      - YouTube梦歌|广港隧道|NETFLIX_84
-      - YouTube梦歌|广港隧道|Netflix_33
-      - YouTube梦歌|京港直连_58
-      - YouTube梦歌|广港隧道|NETFLIX_66
-      - YouTube梦歌|广港隧道|NETFLIX_46
-      - YouTube梦歌|限速节点_6
-      - YouTube梦歌|广港隧道|NETFLIX_67
-      - YouTube梦歌|广港隧道|Netflix_11
-      - YouTube梦歌|广港隧道|NETFLIX_179
+      - YouTube梦歌|广港隧道|NETFLIX_77
+      - YouTube梦歌|广港隧道|Netflix_18
+      - YouTube梦歌|广港隧道|NETFLIX_41
+      - YouTube梦歌|广港隧道|Netflix_3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

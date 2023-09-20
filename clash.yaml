@@ -22,7 +22,7 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"3k+2096","type":"vless","server":"103.234.53.2","port":9003,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.fcppl.link"}},"client-fingerprint":"randomized"}
+  - {"name":"3k+2096","type":"vless","server":"157.119.103.72","port":1521,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.fcppl.link"}},"client-fingerprint":"randomized"}
   - {"name":"hk 2083","type":"vless","server":"193.110.201.75","port":50101,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.fcppl.link"}},"client-fingerprint":"randomized"}
   - {"name":"hk001","type":"vless","server":"154.3.33.180","port":10005,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}
   - {"name":"hk002","type":"vless","server":"103.103.245.45","port":2087,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}

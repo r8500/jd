@@ -22,12 +22,14 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"3k+2096","type":"vless","server":"119.28.64.48","port":20015,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.fcppl.link"}},"client-fingerprint":"randomized"}
-  - {"name":"hk 2083","type":"vless","server":"47.90.124.48","port":10443,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.fcppl.link"}},"client-fingerprint":"randomized"}
-  - {"name":"hk001","type":"vless","server":"43.132.244.52","port":21415,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}
-  - {"name":"hk002","type":"vless","server":"20.247.109.61","port":10022,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.fcppl.link"}},"client-fingerprint":"randomized"}
-  - {"name":"hk003","type":"vless","server":"45.66.131.29","port":44900,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}
-  - {"name":"3k 2096","type":"vless","server":"34.92.150.186","port":49834,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.fcppl.link"}}}
+  - {"name":"HK 001","type":"vless","server":"119.28.64.48","port":20015,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.fcppl.link"}},"client-fingerprint":"randomized"}
+  - {"name":"HK 002","type":"vless","server":"20.187.95.4","port":16981,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.fcppl.link"}},"client-fingerprint":"randomized"}
+  - {"name":"SG 001","type":"vless","server":"13.228.72.95","port":27565,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}
+  - {"name":"SG 002","type":"vless","server":"13.213.64.211","port":42139,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}
+  - {"name":"JP 001","type":"vless","server":"45.66.131.29","port":44900,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.fcppl.link"}},"client-fingerprint":"randomized"}
+  - {"name":"JP 002","type":"vless","server":"45.66.131.67","port":46788,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}
+  - {"name":"TW 001","type":"vless","server":"118.163.101.44","port":44332,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.fcppl.link"}}}
+  - {"name":"TW 002","type":"vless","server":"123.50.37.113","port":8443,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.fcppl.link"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -36,47 +38,55 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - 3k+2096
-      - hk 2083
-      - hk001
-      - hk002
-      - hk003
-      - 3k 2096
+      - HK 001
+      - HK 002
+      - SG 001
+      - SG 002
+      - JP 001
+      - JP 002
+      - TW 001
+      - TW 002
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 3k+2096
-      - hk 2083
-      - hk001
-      - hk002
-      - hk003
-      - 3k 2096
+      - HK 001
+      - HK 002
+      - SG 001
+      - SG 002
+      - JP 001
+      - JP 002
+      - TW 001
+      - TW 002
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - 3k+2096
-      - hk 2083
-      - hk001
-      - hk002
-      - hk003
-      - 3k 2096
+      - HK 001
+      - HK 002
+      - SG 001
+      - SG 002
+      - JP 001
+      - JP 002
+      - TW 001
+      - TW 002
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - 3k+2096
-      - hk 2083
-      - hk001
-      - hk002
-      - hk003
-      - 3k 2096
+      - HK 001
+      - HK 002
+      - SG 001
+      - SG 002
+      - JP 001
+      - JP 002
+      - TW 001
+      - TW 002
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -96,12 +106,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - 3k+2096
-      - hk 2083
-      - hk001
-      - hk002
-      - hk003
-      - 3k 2096
+      - HK 001
+      - HK 002
+      - SG 001
+      - SG 002
+      - JP 001
+      - JP 002
+      - TW 001
+      - TW 002
 
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连

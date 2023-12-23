@@ -29,7 +29,7 @@ proxies:
   - {"name":"JP 001","type":"vless","server":"43.206.229.233","port":443,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"JP 002","type":"vless","server":"45.66.131.67","port":46788,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"TW 001","type":"vless","server":"118.163.101.44","port":44332,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.8500.cloudns.org"}},"client-fingerprint":"randomized"}
-  - {"name":"TW 002","type":"vless","server":"123.50.37.113","port":8443,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.8500.cloudns.org"}},"client-fingerprint":"randomized"}
+  - {"name":"TW 002","type":"vless","server":"61.220.65.189","port":27114,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.8500.cloudns.org"}},"client-fingerprint":"randomized"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select

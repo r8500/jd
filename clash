@@ -95,13 +95,12 @@ proxies:
   - {"name":"TW 001","type":"vless","server":"118.163.101.44","port":44332,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"TW 002","type":"vless","server":"61.220.65.189","port":27114,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"PL 001","type":"vless","server":"s1.8500.cloudns.org","port":8080,"uuid":"31ccd50070664e2199b2c0637f91ad62","tls":false,"servername":"s1.8500.cloudns.org","network":"ws","ws-opts":{"path":"/","headers":{"host":"s1.8500.cloudns.org"}}}
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🔯 故障转移
-      - 🔮 负载均衡
       - DIRECT
       - HK 001
       - HK 002
@@ -127,11 +126,12 @@ proxy-groups:
       - TW 001
       - TW 002
       - PL 001
-  - name: 🔯 故障转移
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 180
+  - name: 🌍 国外媒体
+    type: select
     proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
       - HK 001
       - HK 002
       - SG 001
@@ -141,12 +141,39 @@ proxy-groups:
       - TW 001
       - TW 002
       - PL 001
-  - name: 🔮 负载均衡
-    type: load-balance
-    strategy: consistent-hashing
-    url: http://www.gstatic.com/generate_204
-    interval: 180
+  - name: 📲 电报信息
+    type: select
     proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - HK 001
+      - HK 002
+      - SG 001
+      - SG 002
+      - JP 001
+      - JP 002
+      - TW 001
+      - TW 002
+      - PL 001
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - HK 001
+      - HK 002
+      - SG 001
+      - SG 002
+      - JP 001
+      - JP 002
+      - TW 001
+      - TW 002
+      - PL 001
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
       - HK 001
       - HK 002
       - SG 001
@@ -167,14 +194,17 @@ proxy-groups:
     proxies:
       - REJECT
       - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔯 故障转移
-      - 🔮 负载均衡
       - HK 001
       - HK 002
       - SG 001

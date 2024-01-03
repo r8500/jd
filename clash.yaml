@@ -31,7 +31,7 @@ proxies:
   - {"name":"TW 001","type":"vless","server":"118.163.101.44","port":44332,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"TW 002","type":"vless","server":"61.220.65.189","port":27114,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"PL 001","type":"vless","server":"s1.8500.cloudns.org","port":8080,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","network":"ws","ws-opts":{"path":"/","headers":{"host":"s1.8500.cloudns.org"}}
-proxy-groups:
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select

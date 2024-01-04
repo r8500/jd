@@ -3,7 +3,7 @@
 # 客户端：Clash.Meta
 # 创建时间：2023-08-20 20:18:18
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：10
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -31,6 +31,8 @@ proxies:
   - {"name":"TW 001","type":"vless","server":"118.163.101.44","port":44332,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"TW 002","type":"vless","server":"61.220.65.189","port":27114,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"US 001","type":"vless","server":"172.64.158.122","port":2096,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.8500.cloudns.org"}},"client-fingerprint":"randomized"}
+  - {"name":"US 002","type":"vless","server":"63.141.128.22","port":2096,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.8500.cloudns.org"}},"client-fingerprint":"randomized"}
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -48,6 +50,7 @@ proxy-groups:
       - TW 001
       - TW 002
       - US 001
+      - US 002
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -63,6 +66,7 @@ proxy-groups:
       - TW 001
       - TW 002
       - US 001
+      - US 002
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -77,6 +81,7 @@ proxy-groups:
       - TW 001
       - TW 002
       - US 001
+      - US 002
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -92,6 +97,7 @@ proxy-groups:
       - TW 001
       - TW 002
       - US 001
+      - US 002
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -120,6 +126,7 @@ proxy-groups:
       - TW 001
       - TW 002
       - US 001
+      - US 002
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连

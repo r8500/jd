@@ -22,7 +22,7 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"HK 001","type":"vless","server":"43.154.196.20","port":65432,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.8500.cloudns.org"}},"client-fingerprint":"randomized"}
+  - {"name":"HK 001","type":"vless","server":"34.92.150.186","port":49834,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"HK 002","type":"vless","server":"47.243.135.179","port":55308,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"SG 001","type":"vless","server":"46.51.223.175","port":36099,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.8500.cloudns.org"}},"client-fingerprint":"randomized"}
   - {"name":"SG 002","type":"vless","server":"47.236.19.213","port":65432,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.8500.cloudns.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.8500.cloudns.org"}},"client-fingerprint":"randomized"}

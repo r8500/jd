@@ -30,7 +30,7 @@ proxies:
   - {"name":"JP 002","type":"vless","server":"45.66.131.67","port":46788,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.fcppl.link"}},"client-fingerprint":"randomized"}
   - {"name":"TW 001","type":"vless","server":"172.64.158.122","port":2096,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"3k.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.fcppl.link"}},"client-fingerprint":"randomized"}
   - {"name":"TW 002","type":"vless","server":"61.220.65.189","port":27114,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}
-  - {"name":"US 001","type":"vless","server":"40.84.146.239","port":19870,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}
+  - {"name":"US 001","type":"vless","server":"172.64.156.129","port":2096,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"hk.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.fcppl.link"}},"client-fingerprint":"randomized"}
   - {"name":"US 002","type":"vless","server":"63.141.128.22","port":2096,"uuid":"31ccd500-7066-4e21-99b2-c0637f91ad62","tls":true,"servername":"jp.fcppl.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.fcppl.link"}},"client-fingerprint":"randomized"}
 
 proxy-groups:
